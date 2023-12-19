@@ -1,0 +1,23 @@
+Neue Nachricht von {{ name }} ({{ email }})
+
+{% if pain == 1 %}
+    Wo haben Sie Schmerzen?
+    {% for i in what %}
+        {{ i }}
+    {% endfor %}
+
+    Wie lange schon?
+    {{ strength }}
+
+    Andere Symtome außer Schmerzen
+    {{ where }}
+
+    Möchten Sie von uns zur Terminvereinbarung zurückgerufen werden?
+    {{ callback }}
+
+    Ich habe keine Schmerzen, aber…
+    {{ problem }}
+{% endif %}
+
+Nachricht
+{{ message }}

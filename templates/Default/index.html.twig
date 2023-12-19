@@ -1,0 +1,322 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-cover-img big" style="background-image: url('{{ asset('assets/img/home.jpg') }}')">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="page-header-big">15 Jahre Neurospine.</h1>
+                                    <h3 class="page-header-small" style="font-weight: 300">UNABHÄNGIGKEIT. KOMPETENZ. VERTRAUEN.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		    <!--
+            <div class="container">
+                <div class="layer">
+                    <div class="row row-eq-height">
+                        <div class="col-md-10 col-md-offset-1 news-feed">
+                            <div class="news-fee1d">
+							<h2 class="text-center font-bold">Unsere Praxis bleibt vom <br />23.12. – 03.01.20 geschlossen.</h2>
+								<p class="text-left">Wir wünschen allen unseren Patienten friedvolle und beschwerdefreie Weihnachtstage und ein gesundes Neues Jahr 2020.
+Ab 06.01.2020 sind wir wieder für Sie da. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			-->
+
+            <div class="container">
+                <div class="layer">
+                    <div class="row row-eq-height">
+                        <div class="col-md-10 col-md-offset-1"> <!-- col-md-4 col-md-push-8 -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="{{ asset('assets/img/focus-urkunde.jpg') }}" alt="Neurospine Chemnitz Focus Award" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="layer">
+                    <div class="row row-eq-height">
+                        <div class="col-md-10 col-md-offset-1"> <!-- col-md-4 col-md-push-8 -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="{{ asset('assets/img/neurospine_intro.png') }}" alt="Neurospine Chemnitz" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+            <!--
+            <div class="container">
+                <div class="layer">
+                    <div class="row row-eq-height">
+                        <div class="col-md-10 col-md-offset-1 news-feed">
+                            <div class="news-feed">
+								<h2>Zuverlässige/er  FÄ / FA f. Neurochirurgie zur Einarbeitung /Arbeitsteilung /und Praxisübernahme langfristig gesucht.</h2>
+								<br />
+								<p>
+								Ihre Bewerbung / Angebot + Informationen unter krug@neurospine-chemnitz.de</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="treatment layer">
+                        <h2 class="section_header text-uppercase text-center">So behandeln wir</h2>
+                        <div class="row">
+                            <div class="col-md-6 treatment_box">
+                                <div class="header-cover-img small" style="background: linear-gradient(to right, rgba(51,51,51, 0.4), rgba(51,51,51, 0.4)), url('{{ asset('assets/img/service/konservative-therapie.jpg') }}')">
+                                    <h2 class="page-header-small text-uppercase"><a href="{{ path('service_konservativetherapie') }}">Konservative Therapie</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6 treatment_box">
+                                <div class="header-cover-img small" style="background: linear-gradient(to right, rgba(51,51,51, 0.4), rgba(51,51,51, 0.4)), url('{{ asset('assets/img/service/operative-therapie.jpg') }}')">
+                                    <h2 class="page-header-small text-uppercase"><a href="{{ path('service_operativetherapie') }}">Operative Therapie</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="layer text-center col-move-section">
+                        <div class="row">
+                            <div class="col-md-6 col-move-column">
+                                <div class="box">
+                                    <h2 class="text-uppercase h4">Unsere Sprechzeiten</h2>
+                                    <div class="news-feed small-feed text-center" style="display: none">
+                                        <h5>Nächste Praxisschließzeit:</h5>
+                                    </div>
+                                    <br />
+                                    <div class="grid-layer">
+                                        <b class="text-uppercase">Montag</b>
+                                        <p>08.00 Uhr – 17.00 Uhr</p>
+                                    </div>
+                                    <div class="grid-layer">
+                                        <b class="text-uppercase">Dienstag</b>
+                                        <p>nach Vereinbarung</p>
+                                    </div>
+                                    <div class="grid-layer">
+                                        <b class="text-uppercase">Mittwoch</b>
+                                        <p>08.00 Uhr – 17.00 Uhr</p>
+                                    </div>
+                                    <div class="grid-layer">
+                                        <b class="text-uppercase">Donnerstag</b>
+                                        <p>nach Vereinbarung</p>
+                                    </div>
+                                    <div class="grid-layer">
+                                        <b class="text-uppercase">Freitag</b>
+                                        <p>08.00 Uhr – 13.00 Uhr</p>
+                                    </div>
+                                    <b>Natürlich beraten wir Sie auch nach Vereinbarung.</b>
+                                </div>
+                                <div id="erfassungsbogen" class="box red-bg">
+                                    <h2 class="text-uppercase h4">Erfassungsbogen für Patienten</h2>
+                                    <div class="grid-layer">
+                                        <p class="text-left">Um die Dringlichkeit Ihres Anliegens im Vorfeld besser beurteilen zu können, hilft unserm Team ein <b>vollständig</b> und <b>detailliert</b> ausgefüllter Patientenfragebogen sehr.</p>
+                                    </div>
+                                    <hr />
+                                    <div class="grid-layer text-left">
+                                        <a href="{{ asset('Patientenerfassungsbogen.pdf') }}" target="_blank">Patientenerfassungsbogen</a>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="https://www.jameda.de/chemnitz/aerzte/neurochirurgen/dr-udo-krug/uebersicht/81069776_1/?utm_source=Kunden-Homepages&utm_medium=Badges&utm_term=81069776&utm_campaign=Badges&utm_content=ButtonSmall" target="_blank" style="display:block; width:235px; height:29px; margin:10px auto; background-image:url(https://cdn1.jameda-elements.de/_images/badges/fach_teaser_small_neu.gif); background-repeat:no-repeat; border-radius:4px; -moz-border-radius:4px; -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.5); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.5); box-shadow: 0px 0px 4px rgba(0,0,0,0.5);"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-move-column">
+                                <div class="box grey-bg local_business">
+                                    <h2 class="text-uppercase h4">Termin vereinbaren</h2>
+                                    {% include '_partials/contact.html.twig' %}
+                                </div>
+                                <div class="box">
+                                    <h2 class="text-uppercase h4">Rückruf anfordern</h2>
+                                    <div class="grid-layer text-left">
+                                        {% include('flashbag.html.twig') %}
+                                        {{ render(controller('App\\Controller\\ContactController::callbackAction')) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="layer red-bg text-center blog-news">
+                        <h2 class="section_header text-uppercase">Informationen</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        <h3>Für unsere Patienten</h3>
+                                            <img src="{{  asset('assets/img/home_patienten.jpg') }}" />
+                                        <ul class="list-unstyled box-elements">
+                                            <li><a href="{{ asset('news/bv-ct-schmerztherapie.pdf') }}" target="_blank">BV und CT Schmerztherapie</a></li>
+                                            <li><a data-toggle="modal" data-target="#Chronischer_Schmerz_SCS-Sonde">Chronischer Schmerz SCS-Sonde</a></li>
+                                            <li><a href="{{ asset('news/empfehlung_stoßwellentherapie.pdf') }}" target="_blank">Empfehlungen Stoßwellentherapie</a></li>
+                                            <li><a href="{{ asset('news/myelographie.pdf') }}" target="_blank">Myelographie</a></li>
+                                            <li><a href="{{ asset('news/empfehlung_hws.pdf') }}" target="_blank">Verhalten nach Operationen HWS</a></li>
+                                            <li><a href="{{ asset('news/empfehlung_lws.pdf') }}" target="_blank">Verhalten nach Operationen LWS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        <h3>Für Zuweiser/Kollegen</h3>
+                                        <img src="{{  asset('assets/img/home_kollegen.jpg') }}" />
+                                        <ul class="list-unstyled box-elements">
+                                            <li><a href="{{ asset('news/degenerative-lumbale-spinalkanalstenose.pdf') }}" target="_blank">Spinalkanalstenose LWS</a></li>
+                                            <li><a data-toggle="modal" data-target="#LWS_Spondylodese_versus_Dekompression">LWS Spondylodese versus Dekompression</a></li>
+                                            <li><a data-toggle="modal" data-target="#Sagittale_Wirbelsäulenbalance">Sagittale Wirbelsäulenbalance</a></li>
+                                            <li class="accordion">
+												<span data-toggle="collapse" data-target="#collapseOne" style="cursor: pointer;">
+													Schmerztherapie SCS - Sonde
+												</span>
+												<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+													<a data-toggle="modal" data-target="#Schmerztherapie_SCS-Sonde">SCS - Prinzip und Indikationen</a><br>
+													<a data-toggle="modal" data-target="#Schmerztherapie_SCS-Sonde2">SCS -Hochfrequenzstimulation HF10</a>
+												</div>
+											</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Sagittale_Wirbelsäulenbalance" tabindex="-1" role="dialog" aria-labelledby="Sagittale_Wirbelsäulenbalance">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sagittale Wirbelsäulenbalance</h4>
+                </div>
+                <div class="modal-body text-justify bullet">
+                    <p><b>Die sagittale Wirbelsäulenbalance--klinische Bedeutung und radiologische Bemessung.</b> [Sagittal Balance of the Spine--Clinical Importance and Radiographic Assessment]. Decker, S;	Müller, C W;	Omar, M;	Krettek, C;	Schwab, F;	Trobisch, P D. Z Orthop Unfall; 154(2): 128-33, 2016 Apr.</p>
+                    <br />
+                    <p><b>The influence of sagittal  spinal deformity on anteversion of the acetabular component in total hip arthroplasty</b>, D. Phan, S. S. Bederman, R. Schwarzkopf: Bone Joint J 2015;97-B:1017–23</p>
+                    <br />
+                    <p><b>Die postoperative sagittale Imbalance erhöht das Pseudarthrose Risiko nach Lumbalfusion</b>, R Langmantel, V Karantzoulis, R Ebner, F Vazifehdan, Die Wirbelsäule 2017; 01(01): 66-68</p>
+                    <br />
+                    <p><b>Eine Studie zur optimierten Planung der postoperativen sagittalen Balance in der Behandlung adulter Deformitäten: Einfluss der Flexibilität der thorakalen Kyphose</b>, S Decker, M Mayer, W Hitzl, A Hempfing, L Ernstbrunner, O Meier, H Koller, Die Wirbelsäule 2017; 01(01): 66-68</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-neurospine" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="LWS_Spondylodese_versus_Dekompression" tabindex="-1" role="dialog" aria-labelledby="LWS Spondylodese versus Dekompression">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">LWS Spondylodese versus Dekompression</h4>
+                </div>
+                <div class="modal-body text-justify bullet">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-9fhkrJKRsQ"></iframe>
+                    </div>
+                    <hr />
+                    <p>Lurie JD, Tosteson TD, Tosteson A et al. <b>Long-term Outcomes of Lumbar Spinal Stenosis. Eight-Year Results of the Spine Patient Outcomes Research Trial. (SPORT)</b> Spine 2015; 40:63-76</p>
+                    <br />
+                    <p>Försth P, Olaffson G, Carlsson T et al. <b>A Randomized, Controlled Trial of Fusion Surgery for Lumbar Spinal Stenosis.</b> N Engl J Med 2016; 374; 1413-23</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-neurospine" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Schmerztherapie_SCS-Sonde" tabindex="-1" role="dialog" aria-labelledby="Schmerztherapie SCS - Sonde">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">SCS - Prinzip und Indikationen</h4>
+                </div>
+                <div class="modal-body text-justify">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/223158389?title=0&byline=0&portrait=0"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-neurospine" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Schmerztherapie_SCS-Sonde2" tabindex="-1" role="dialog" aria-labelledby="Schmerztherapie SCS - Sonde">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">SCS -Hochfrequenzstimulation HF10</h4>
+                </div>
+                <div class="modal-body text-justify">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/313206291?title=0&byline=0&portrait=0"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-neurospine" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Chronischer_Schmerz_SCS-Sonde" tabindex="-1" role="dialog" aria-labelledby="Chronischer Schmerz SCS-Sonde">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Chronischer Schmerz SCS-Sonde</h4>
+                </div>
+                <div class="modal-body text-justify">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/223161841?title=0&byline=0&portrait=0"></iframe>
+                    </div>
+					<hr />
+                    <div class="embed-responsive embed-responsive-16by9">
+						<iframe src="https://www.youtube.com/embed/ZGDKf9x-RyI" class="embed-responsive-item"></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-neurospine" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

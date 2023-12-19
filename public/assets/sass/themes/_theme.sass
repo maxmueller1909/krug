@@ -1,0 +1,46 @@
+body
+  font-weight: 300
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+#app
+
+  .header-cover-img
+    @include background-cover
+    text-align: center
+    overflow: hidden
+    color: #ffffff
+    &.big
+      padding-top: 40vh
+      padding-bottom: 40vh
+      .page-header-big
+        font-weight: 900
+      .page-header-small
+        font-weight: 100
+    &.small
+      padding-top: 10vh
+      padding-bottom: 10vh
+      .page-header-big
+        font-weight: 900
+      .page-header-small
+        font-size: 2.8em
+
+
+  .red-bg
+    background: $ci_color
+    color: #ffffff
+    a
+      color: #ffffff
+      text-decoration: underline
+      &:hover
+        color: #dddddd
+
+  .grey-bg
+    background: #f8f8f8
+
+
+  .note
+    border-top: 1px solid darken($ci_color, 10)
+    margin-top: $grid-gutter-width/2
+    padding: $grid-gutter-width/2 $grid-gutter-width 0 $grid-gutter-width
+    font-size: 0.8em

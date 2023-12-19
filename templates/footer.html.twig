@@ -1,0 +1,88 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="layer">
+                    {% if app.request.get('_route') == 'contact' %}
+                        <h5>Partner</h5>
+                        <div class="row">
+                            <div class="col-md-2 col-xs-6">
+                                 <img src="{{ asset("assets/img/partner/agr.jpg") }}" alt="AGR Logo" />
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="{{ asset("assets/img/partner/bws_royal.jpg") }}" alt="BWS-Royal Logo" />
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="{{ asset("assets/img/partner/dr_claudia_doehler.jpg") }}" alt="Dr. Claudia Döhler Logo" />
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="{{ asset("assets/img/partner/pilates_zentrum_chemnitz.jpg") }}" alt="Pilates Zentrum Chemnitz" />
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="{{ asset("assets/img/partner/admedia.jpg") }}" alt="AdMedia Logo" />
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <img src="{{ asset("assets/img/partner/medizinische_kraeftigungtherapie.jpg") }}" alt="Medizinische Kraeftigungtherapie Logo" />
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="facts">
+                    <div class="row row-eq-height" id="counters">
+                        <div class="col-md-4 single">
+                            <span class="ace-counter-number number h2" data-from="0" data-to="9" data-speed="500" data-refresh-interval="1">9</span>
+                            <p class="text-center">von 10 Patienten</p>
+                            <p class="text-center">mit implantierter Schmerzsonde wollen diese nach Testwoche dauerhaft behalten</p>
+                        </div>
+                        <div class="col-md-4 single">
+                            <span class="ace-counter-number number h2" data-from="0" data-to="92" data-speed="500" data-refresh-interval="1">92</span>
+                            <p class="text-center">Prozent</p>
+                            <p class="text-center">aller 2016 operierten Patienten haben unsere Praxis weiterempfohlen</p>
+                        </div>
+                        <div class="col-md-4 single">
+                            <span class="ace-counter-number number h2" data-from="0" data-to="5" data-speed="500" data-refresh-interval="1">5</span>
+                            <p class="text-center">Tage</p>
+                            <p class="text-center">beträgt die durchschnittliche Verweildauer im KH nach Bandscheiben-OP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6">
+                            <a href="{{ path('home_homepage') }}"><img src="{{ asset("assets/img/logo2.png") }}" alt="Neurospine Chemnitz Logo" class="footer-logo"/></a>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <b>Adresse</b>
+                            <p>
+                                Zeisigwaldstraße 80<br />
+                                09130 Chemnitz<br />
+                                Sachsen
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <b>Telefon</b>
+                            <a href="tel: +493717750014">0371 775 00 14</a><br />
+                            <a href="tel: +491749393140">0174 93 93 140</a><br />
+                            <a href="whatsapp://send?phone=+491749393140">WhatsApp</a>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <b>Mail</b>
+                            Patiententen <a href="mailto: kontakt@neurospine-chemnitz.de">kontakt@neurospine-chemnitz.de</a><br />
+                            Geschäftspartner <a href="mailto: info@neurospine-chemnitz.de">info@neurospine-chemnitz.de</a>
+                            <a href="{{ path('home_imprint') }}">Impressum</a> | <a href="{{ path('home_protection') }}">Datenschutz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+				<p style="text-align: center;">Diese Seite ist Chemnitzer Können - erstellt von <a href="https://popcorn-solution.com" target="_blank">Popcorn Solution GmbH</a>.</p>
+			</div>
+		</div>
+    </div>
+</footer>

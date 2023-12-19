@@ -1,0 +1,45 @@
+img
+  width: 100%
+
+
+.row-eq-height
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display:         flex
+  @media (max-width: $screen-xs-max)
+    display: block
+
+.container-fluid
+  max-width: 1860px
+
+
+.layer
+  margin-top: $grid-gutter-width*4
+  clear: both
+  @media (max-width: $screen-xs-max)
+    margin-top: $grid-gutter-width*2
+  .box
+    padding: $grid-gutter-width
+    margin-bottom: $grid-gutter-width
+    h2
+      margin-bottom: $grid-gutter-width*1.5
+    .grid-layer
+      margin-bottom: $grid-gutter-width
+
+.col-move-section
+  .col-move-column
+    &[class*="col-"]
+      &:nth-of-type(2)
+        margin-top: $grid-gutter-width*3
+        @media (max-width: $screen-xs-max)
+          margin-top: 0
+    .box
+      border: 1px solid #ccc
+      p
+        text-align: center!important
+
+.blog-news
+  padding: 80px 0
+  img
+    margin-top: 20px

@@ -1,0 +1,16 @@
+{{ form_start(callback) }}
+{{ form_row(callback.name) }}
+{{ form_row(callback.number) }}
+{{ form_row(callback.message) }}
+
+<div class="form-group lgr_restyx">
+    <span style="display:inline-block">
+        {{ form_widget(callback.protection) }}
+    </span>
+    <span style="display:inline-block">
+        Ich hab die <a href="{{ path('home_protection') }}" target="_blank">Datenschutzbestimmungen</a> gelesen.
+    </span>
+</div>
+
+<button class="btn btn-neurospine btn-lg" style="width: 100%">Rückruf anfordern</button>
+{{ form_end(callback) }}

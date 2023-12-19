@@ -1,0 +1,26 @@
+#app
+  header
+    margin-top: 20px
+    nav
+      .navbar-header
+        .navbar-brand
+          img
+            width: auto
+            height: 100%
+            @media (min-width: $screen-md-max)
+              position: relative
+              z-index: 1
+              background: $ci_color
+              height: auto
+              padding: 25px /* firefox bug fix */
+              margin-top: -25px
+              width: 200px
+
+      .main-nav
+        > li
+          > a
+            font-weight: bold
+            margin-left: 10px
+            border-bottom: 1px solid $ci_color
+            &.active
+              border-bottom: 5px solid $ci_color

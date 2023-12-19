@@ -1,0 +1,63 @@
+<header>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('home_homepage') }}">
+                    <img src="{{ asset("assets/img/logo.png") }}" alt="Neurospine Chemnitz Logo"/>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://www.google.de/maps/dir//Dr.+Udo+Krug,+Zeisigwaldstraße+80,+09130+Chemnitz/@50.839281,12.9614497,17z/data=!4m15!1m6!3m5!1s0x47a7442bc2f78477:0x3459cf39caba8006!2sDr.+Udo+Krug!8m2!3d50.839281!4d12.9636384!4m7!1m0!1m5!1m1!1s0x47a7442bc2f78477:0x3459cf39caba8006!2m2!1d12.9636384!2d50.839281" target="_blank" itemscope itemtype="http://schema.org/LocalBusiness"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">Zeisigwaldstraße 80</span>,
+                                    <span itemprop="addressLocality">09130 Chemnitz</span>,
+                                    <span itemprop="addressRegion">Sachsen</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="{{ path('contact') }}"><i class="fa fa-calendar" aria-hidden="true"></i> {{ "now"|date("w")|opening }}</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right main-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle {% if app.request.attributes.get('_route') starts with "home" %} active {% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Startseite <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('home_homepage') }}">Home</a></li>
+                            <li><a href="{{ path('home_neurochirurgie') }}">Neurochirurgie Allgemein</a></li>
+                            <li><a href="{{ path('home_philosophy') }}">Prinzipien und Praxisphilosophie</a></li>
+                            <li><a href="{{ path('home_emergency') }}">Zuständigkeiten im Notfall</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle {% if app.request.attributes.get('_route') starts with "service" %} active {% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leistungen <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('service') }}">3 Stufen Modell</a></li>
+                            <li><a href="{{ path('service_diagnostik') }}">Diagnostik</a></li>
+                            <li><a href="{{ path('service_konservativetherapie') }}">Konservative Therapie</a></li>
+                            <li><a href="{{ path('service_minimalinvasivetherapie') }}">Minimalinvasive Schmerztherapie</a></li>
+                            <li><a href="{{ path('service_operativetherapie') }}">Operative Therapie</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle {% if app.request.attributes.get('_route') starts with "practice" %} active {% endif %}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Praxis <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ path('practice_team') }}">Unser Team</a></li>
+                            <li><a href="{{ path('practice_practice') }}">Unsere Räume</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="{% if app.request.attributes.get('_route') starts with "contact" %} active {% endif %}" href="{{ path('contact') }}">Kontakt</a></li>
+                    <li><a href="{{ path('home_homepage') }}#erfassungsbogen" class="btn-neurospine">Patientenerfassungsbogen</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+</header>
+<div class="clearfix"></div>
